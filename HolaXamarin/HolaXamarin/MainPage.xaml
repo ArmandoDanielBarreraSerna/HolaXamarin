@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaXamarin.MainPage">
+
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 WidthRequest="250">
+        <Frame BackgroundColor="DarkBlue" Padding="24" CornerRadius="0">
+            <Label Text="XAMARIN PROJECT" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry Placeholder="Nombre" x:Name="Nombre"
+               Keyboard="Text"/>
+        <Entry Placeholder="Apellido" x:Name="Apellido"
+               Keyboard="Text"/>
+        <Entry Placeholder="Dirección" x:Name="Dirección"
+               Keyboard="Text"/>
+        <Entry Placeholder="Edad" x:Name="Edad"
+               Keyboard="Numeric"/>
+        <Button Text="Click" Clicked="Button_Clicked"
+                BackgroundColor="DarkMagenta"/>
+    </StackLayout>
+
+</ContentPage>
